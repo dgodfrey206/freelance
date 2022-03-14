@@ -1,0 +1,1 @@
+I would prefer using the third hash function. It incorporates all the values of the input and causes the fewest collisions.

@@ -1,0 +1,1 @@
+Hash #2 isn't a good hash function because it does not account for the order or length of the input data. Anagrams as well as strings whose ASCII values sum to the same value will all be hashed into the same bucket. Increasing the size of the table does not solve this problem.

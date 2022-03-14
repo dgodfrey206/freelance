@@ -1,0 +1,1 @@
+A collection of projects and assignments that I helped complete for a number of clients.
