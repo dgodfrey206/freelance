@@ -1,0 +1,7 @@
+a)  If num is 56, what card is it?
+    5 of spades
+b)  If num is 39, what card is it?
+    King of clubs
+c)  If you want to create a card that is HeartQ, what possible value of num will work?  
+    25
+d)  The card of a) is created with num being 37. 

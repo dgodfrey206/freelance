@@ -1,0 +1,28 @@
+Set Tracing:
+What is the content of these data structures after this is done?
+    singleLetter = {r,t,d,y,n,o}
+    yodaList = {t,r,y,n,o,t,d,o,d,o,n,o,t,o,r,d,o}
+
+What are the output results?
+    size is 4
+    do
+    not
+    or
+    try
+    number of
+
+What is the value of word?
+    trynotdodonotordotrynotdodonotordo
+
+Map Tracing:
+What are the final content of data structures involved?
+    wSet = {A,B,D,E,G,Y,O}
+    iMap = {{0, G}, {400, B}, {800, A}, {100, O}, {500, Y}, {900, B}, {200, O}, {600, E}, {1000, Y}, {300, D}, {700, B}}
+What is the output?
+    AY
+    BY
+    DY
+    EY
+    GY
+    YY
+    OY

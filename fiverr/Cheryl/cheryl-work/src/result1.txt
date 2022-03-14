@@ -1,0 +1,8 @@
+1. No command line argument:
+	The program printed random numbers. Since address space that was not allocated to us has been accessed, the result is Undefined Behavior. The behavior of the program therefore cannot be explained. I did not recieve a memory fault.
+2. Small command line argument:
+	Since address space that was not allocated to us has been accessed, the result is Undefined Behavior. The behavior of the program therefore cannot be explained.
+3. A very large command line argument:
+	Since address space that was not allocated to us has been accessed, the result is Undefined Behavior. The behavior of the program therefore cannot be explained. When I ran the program my computer froze.
+4. How could the problem be fixed?
+	Change "it < b.end() + n" to it != b.end()"

@@ -1,0 +1,5 @@
+1. How much memory was used before the exception was generated?
+680000000 bytes.
+2. Is naively running out of heap memory an exploitable vulnerability in
+Java?
+No, because Java has garbage collection.

@@ -1,0 +1,264 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 public class csc22503 \{\
+\
+	static Scanner scan = new Scanner(System.in);\
+	\
+	public static void main(String[] args) \{\
+		\
+		\
+		/*\
+		\
+		System.out.println("Enter the size of array: ");\
+		\
+		int size = scan.nextInt();\
+		\
+		int [] arr = new int[size];\
+		\
+		System.out.println("Enter the numbers: ");\
+		\
+		for(int i =0; i<arr.length; i++)\{\
+			arr[i] = scan.nextInt();\
+		\}\
+		\
+		int [] insertarray = new int[size +1];\
+		System.out.println("Enter the position to insert the number: ");\
+		int position = scan.nextInt();\
+		System.out.println("Enter the number you like: ");\
+		int number = scan.nextInt();\
+		\
+		for (int i = 0; i<arr.length+1; i++)\{\
+			\
+			if(i < position)\{\
+				insertarray[i] = arr[i];\
+			\}\
+			else if (i == position)\{\
+				insertarray [i] = number;\
+			\}\
+			else\{\
+				insertarray[i] = arr[i-1];\
+			\}\
+		\}\
+		\
+		for (int i =0; i<arr.length+1;i++)\{\
+			System.out.println(insertarray[i]);\
+		\}\
+		\
+		\
+		//int [] deletearray = new int[size+1];\
+		 int [] deletearray = insertarray;\
+		\
+		System.out.println("Enter the position index where you want to remove the number: ");\
+		position = scan.nextInt();\
+		\
+	   for(int i =0; i<insertarray.length; i++)\{\
+		   if(i < position)\{\
+			  deletearray[i] = insertarray[i];\
+		   \}\
+		   else if (i == position)\{\
+			   continue;\
+		   \}\
+		   else \{\
+			   deletearray[i-1]= insertarray[i];\
+		   \}\
+	   \}\
+	   for(int i = 0; i<insertarray.length-1; i++)\{\
+		   System.out.println(deletearray[i]);\
+	   \}\
+	   */\
+		/*\
+        System.out.println("Enter the size of array: ");\
+		\
+		int size = scan.nextInt();\
+		\
+		int [] arr = new int[size];\
+		\
+		System.out.println("Enter the numbers: ");\
+		\
+		for(int i =0; i<arr.length; i++)\{\
+			arr[i] = scan.nextInt();\
+		\}\
+		\
+		int pos =0, num= 0;\
+		arr = insert(arr, pos, num);\
+		display(arr);\
+		\
+		arr = remove(arr, pos);\
+		display(arr);\
+\
+	\}\
+	////////////// insert method array ////////////////////////////////////\
+	public static int[] insert(int [] arr, int position, int number )\{\
+		\
+		System.out.println("In which position you want to enter the number: ");\
+		position = scan.nextInt();\
+		\
+		System.out.println("Which number you want to enter: ");\
+		number = scan.nextInt();\
+		\
+		int [] newarray = new int[arr.length+1];\
+		\
+		for(int i=0; i<newarray.length;i++)\{\
+			\
+			if(i<position)\{\
+				newarray[i] = arr[i];		\
+			\}\
+			else if (i == position)\{\
+				newarray[position]  = number;\
+			\}\
+			else \{\
+				newarray[i] = arr[i-1];\
+			\}\
+		\}\
+		return newarray;\
+	\}\
+	 //// remove method array //////////////////////////////////////////////////////\
+	public static int [] remove(int[] arr, int position)\{\
+		\
+		System.out.println("Enter the position in order to remove the number: ");\
+		position = scan.nextInt();\
+		\
+		int [] deletearray = new int[arr.length-1];\
+		for(int i =0,j=0; i<arr.length; i++)\{\
+			\
+			if(i==position)\{\
+				continue;\
+			\}\
+			else \{\
+				deletearray[j++] = arr[i];\
+			\}\
+		\}\
+		return deletearray;\
+		\
+	\}\
+	//////////display array method  ////////////////////////////\
+	public static void display(int [] arr)\{\
+		for(int i =0; i<arr.length; i++)\{\
+			System.out.println(arr[i]);\
+		\}\
+		*/\
+		\
+		\
+		CourseCSC225 csc225 = new CourseCSC225("Data Structure");\
+		csc225.addStudent("alma");\
+		csc225.addStudent("john");\
+		csc225.addStudent("baez");\
+		csc225.addStudent("michael");\
+		\
+		///   csc225.addStudent("james", 87);\
+		\
+		\
+		String students1[] = csc225.getStudents();\
+		\
+		for(int i = 0; i<students1.length; i++)\{\
+			System.out.println("index is: " + (i)+ " --- > " + students1[i]);\
+		\}\
+		\
+		///// insert or add more students ./////////\
+		\
+		\
+		System.out.println("Enter the name of student: ");\
+		String student = scan.next();\
+		\
+		//System.out.println("Enter the student grade: ");\
+		//double grade1 = scan.nextDouble();\
+		\
+		csc225.addStudent(student);\
+		\
+		\
+		\
+		students1 = csc225.getStudents();\
+		for(int i =0; i<students1.length; i++)\{\
+			System.out.println("index is: " + (i)+ " --- > " + students1[i]);\
+		\}\
+		\
+		\
+		\
+	\}\
+\
+\}\
+\
+\
+\
+\
+\
+class CourseCSC225\{\
+	\
+	private String courseName;\
+	private String [] students = new String[1];\
+	private int numberOfStudents;\
+	\
+	public CourseCSC225(String courseName)\{\
+		this.courseName = courseName;\
+	\}\
+	\
+	public String[] getStudents()\{\
+		return students;\
+	\}\
+	public int getNumberOfStudents()\{\
+		return numberOfStudents;\
+	\}\
+	\
+	public String getCourseName()\{\
+		return courseName;\
+	\}\
+	\
+	///////////////// add students method ///////////////////\
+	public void addStudent(String student)\{\
+		String [] a = new String[students.length+1];\
+		if(numberOfStudents == students.length)\{\
+		for (int i = 0; i<numberOfStudents; i++)\{\
+			a[i] = students[i];\
+		\}\
+		students = a;\
+		\
+	  \}\
+	    students[numberOfStudents] = student;\
+	    numberOfStudents++;\
+	\}\
+	/////////////////////////////////////\
+	\
+	\
+	public void dropStudent(String student)\{\
+		int position = findStudent(student);\
+		if(position >=0)\{\
+			dropStudent(position);\
+		\}\
+		else\{\
+			System.out.println("The student doesnt exists in this course.. try again");\
+		\}\
+	\}\
+	private void dropStudent(int position)\{\
+		String [] s = new String[students.length -1];\
+		for(int i =0, j=0; i<s.length; i++)\{\
+			if(i == position)\{\
+				j++;\
+			\}\
+			s[i]=students[j];\
+		\}\
+		this.students=s;\
+		numberOfStudents--;\
+	\}\
+	\
+	private int findStudent(String student)\{\
+		for(int i =0; i<numberOfStudents; i++)\{\
+			if(students[i].equals(student))\{\
+				return i;\
+			\}\
+		\}\
+		return -1;\
+}------------------------------------------------------------------------
+Original craigslist post:
+https://newyork.craigslist.org/brx/cps/d/new-york-java-programmer-will-do-your/7436023774.html
+About craigslist mail:
+https://craigslist.org/about/help/email-relay
+Please flag unwanted messages (spam, scam, other):
+https://post.craigslist.org/mailflag?flagCode=34&smtpid=be7f93a06a2ea246d9ce4265aabffba68a205423.1
+------------------------------------------------------------------------

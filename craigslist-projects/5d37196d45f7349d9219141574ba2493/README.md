@@ -1,0 +1,1 @@
+"I am looking for a C program which loop decimal numbers 1 to 255 and convert each number to 8 bit binary number.  On each pass, the `int array[8]` must contain 1's and 0's for all indexes.  All array indexes must be loaded on each pass for each number from 1 to 255. Previous array values are overwritten with new values."

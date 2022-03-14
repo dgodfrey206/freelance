@@ -1,0 +1,10 @@
+Student name: Noyan
+
+Assigned state is  NY
+
+input city list size is 274
+short citylis length is 4
+Paterson is a city in New Jersey. It has a population of 149222
+Newark is a city in New Jersey. It has a population of 273546
+Jersey City is a city in New Jersey. It has a population of 240055
+Elizabeth is a city in New Jersey. It has a population of 120568
